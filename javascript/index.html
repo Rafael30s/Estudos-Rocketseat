@@ -1,73 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Javascrpit</title>
 </head>
+
 <body>
     <script>
         // variaveis e dados
-        // var nome = 'Rafael';
-        // var idade = 23;
-        // var peso = 48;
-        // var humano = true;
+        var nome = 'Rafael';
+        var idade = 23;
+        var peso = 48;
+        var humano = true;
 
-        // var alunos = ['Rafael', 'Diego', 'Gabriel'];
+        var alunos = ['Rafael', 'Diego', 'Gabriel'];
 
-        // var aluno = {
-        //     nome: alunos[0],
-        //     idade: 23,
-        //     peso: 48,
-        //     humano: true
-        // };
+        var aluno = {
+            nome: alunos[0],
+            idade: 23,
+            peso: 48,
+            humano: true
+        };
 
-        // console.log(alunos[1]);
-        // console.log(aluno.nome);
+        console.log(alunos[1]);
+        console.log(aluno.nome);
 
-        // operações matematicas
-        // var x = 10;
-        // var y = 5;
-        // var resultado =x+y;
-        // x*=y;
-        // console.log(x);
+        // Operações matematicas
+        var x = 10;
+        var y = 5;
+        var resultado = x + y;
+        x *= y;
+        console.log(x);
 
         // Funções
-            // function soma(numero1, numero2){
-            //     var resultado = numero1 + numero2;
-            //     return resultado;
-            // }
-            // var resultado = soma(1,2);
-            // console.log(resultado);
+        function soma(numero1, numero2) {
+            var resultado = numero1 + numero2;
+            return resultado;
+        }
+        var resultado = soma(1, 2);
+        console.log(resultado);
 
         // Condicionais
-            function retornaSexo(sexo){
-                // M, F
-                // Masculino, Feminino
-                
-                // IF
-                // if(sexo === 'M'){
-                //     return 'Masculino';
-                // } else if(sexo ==='F'){
-                //     return 'Feminino';
-                // } else {
-                //     return 'Outro';
-                // }
+        function retornaSexo(sexo) {
+            //  M, F
+            //Masculino, Feminino
 
-                // SWITCH CASE
-
-                switch (sexo) {
-                    case 'M':
-                    return 'Masculino';
-                    case 'F':
-                    return 'Feminino';
-                    default: 
-                    return 'Outro';
-                }
+            //IF
+            if (sexo === 'M') {
+                return 'Masculino';
+            } else if (sexo === 'F') {
+                return 'Feminino';
+            } else {
+                return 'Outro';
             }
-            var resultado = retornaSexo('M');
-            console.log(resultado);
 
+            // SWITCH CASE
+
+            switch (sexo) {
+                case 'M':
+                    return 'Masculino';
+                case 'F':
+                    return 'Feminino';
+                default:
+                    return 'Outro';
+            }
+        }
+        var resultado = retornaSexo('M');
+        console.log(resultado);
+
+        // Operadores Logicos
+
+        var sexo = 'F';
+        var masculino = sexo === 'M';
+        console.log(masculino);
+
+        // Operações ternarias
+
+        sexo = 'M';
+
+        var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+        console.log(retorno);
+
+        // Estrutura de Repetição
+        // FOR, WHILE
+
+        for (var i = 0; i <= 10; i++) {
+            console.log(i);
+        }
+
+        var j = 0;
+        while (j <= 10) {
+            console.log(j);
+            j++;
+        }
+
+        function Exibir() {
+            console.log('Hello World');
+        }
+
+        // setInterval executa a cada x segundos
+        // setInterval(Exibir, 1000);
+        
+        // função com parentes executa ela
+        // função sem parentes passa ela com parametro
+
+        // setTimeout executa apenas uma vez mas vc pode escolher o tempo de delay
+        setTimeout(Exibir, 5000);
     </script>
 </body>
+
 </html>
