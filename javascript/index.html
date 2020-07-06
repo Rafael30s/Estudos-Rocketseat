@@ -33,12 +33,41 @@
         // console.log(x);
 
         // Funções
-            function soma(numero1, numero2){
-                var resultado = numero1 + numero2;
-                return resultado;
+            // function soma(numero1, numero2){
+            //     var resultado = numero1 + numero2;
+            //     return resultado;
+            // }
+            // var resultado = soma(1,2);
+            // console.log(resultado);
+
+        // Condicionais
+            function retornaSexo(sexo){
+                // M, F
+                // Masculino, Feminino
+                
+                // IF
+                // if(sexo === 'M'){
+                //     return 'Masculino';
+                // } else if(sexo ==='F'){
+                //     return 'Feminino';
+                // } else {
+                //     return 'Outro';
+                // }
+
+                // SWITCH CASE
+
+                switch (sexo) {
+                    case 'M':
+                    return 'Masculino';
+                    case 'F':
+                    return 'Feminino';
+                    default: 
+                    return 'Outro';
+                }
             }
-            var resultado = soma(1,2);
+            var resultado = retornaSexo('M');
             console.log(resultado);
+
     </script>
 </body>
 </html>
