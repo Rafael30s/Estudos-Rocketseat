@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+
+<body>
+    <button onclick="Adicionar()">Adicionar</button>
+    <div id="saida">
+
+    </div>
+</body>
+<script>
+    function Adicionar() {
+        var containerElement = document.querySelector('#saida');
+        var box = document.createElement('div');
+        containerElement.appendChild(box);
+        box.style.marginTop = '10px';
+        box.style.width = '100px';
+        box.style.height = '100px';
+        box.style.backgroundColor = 'red';
+
+    }
+</script>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>Ex2</title>
+</head>
+
+<body>
+    <button onclick="Adicionar()">Adicionar</button>
+    <!-- <div style="width: 100px;height: 100px; background-color: aqua;" id="boxTest"> -->
+
+    </div>
+    <div id="saida">
+
+    </div>
+</body>
+<script>
+
+    function Adicionar() {
+        var containerElement = document.querySelector('#saida');
+        var box = document.createElement('div');
+        containerElement.appendChild(box);
+        box.style.marginTop = '10px';
+        box.style.width = '100px';
+        box.style.height = '100px';
+        box.style.backgroundColor = 'red';
+        box.setAttribute('onmouseover','mudarCor(this)');
+    }
+
+    function mudarCor(quadrado){
+        quadrado.style.backgroundColor=getRandomColor();
+    }
+
+    function getRandomColor() {
+        console.log('Chegou');
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+</script>
+
+</html>
